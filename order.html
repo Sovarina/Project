@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Сайт проект</title>
+	<style>
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap');
+</style>
+	<link href="css/style.css" rel="stylesheet">
+        <script src="js/jquery-3.6.0.min.js"></script>
+        <script src="js/jquery.mask.js"></script>
+        <script src="js/order.js"></script>
+        <script src="js/calendar.js"></script>
+        <script src="js/scripts.js"></script>
+</head>
+<body>
+	<div class="wrapper">
+		<header>
+        <div class="topheader">
+            <div class="container">
+                <div id="yourcity">
+					<p>Ваш город: Москва</p>
+					 <div class="div-popup">
+					<span>Ваш город: Москва?</span>
+					<button type="button" class="btn-yes">Да</button>
+					<button type="button" class="btn-no">Нет</button>
+					</div>
+				</div>		
+			</div>
+		</div>
+        <div class ="mainheader">
+            <div class="container">
+                <img src="images/logo.png" alt="Логотип" class="logo">
+            </div>
+        </div>
+            <nav class="topmenu container">
+                <span class="menupoint">
+                    <a href="#" class="line-point">Каталог</a>
+                    <span>
+                        <a href="#" class="pulldown-point">Мототехника</a>
+                        <a href="#" class="pulldown-point">Экипировка</a>
+                        <a href="#" class="pulldown-point">Аксессуары</a>
+                        <a href="#" class="pulldown-point">Запчасти</a>
+                        <a href="#" class="pulldown-point">Моторезина</a>
+                        <a href="#" class="pulldown-point">Тюнинг</a>
+                    </span>
+                </span>
+                <span class="menupoint">
+                    <a href="#" class="line-point">Бренды</a>
+                    <span>
+                        <a href="#" class="pulldown-point">Мототехника</a>
+                        <a href="#" class="pulldown-point">Экипировка</a>
+                        <a href="#" class="pulldown-point">Аксессуары</a>
+                        <a href="#" class="pulldown-point">Запчасти</a>
+                        <a href="#" class="pulldown-point">Моторезина</a>
+                        <a href="#" class="pulldown-point">Тюнинг</a>
+                    </span>
+                </span>
+                <span class="menupoint">
+                    <a href="#" class="line-point">О нас</a>
+                </span>
+                <span class="menupoint">
+                    <a href="#" class="line-point">Оплата и доставка</a>
+                </span>
+                <span class="menupoint">
+                    <a href="#" class="line-point">Зимнее хранение</a>
+                </span>
+            </nav>
+           </header>
+            <main class="container catalog">
+                <aside>
+                    <div class="catmenu">
+                        <div class="catmenu_item">
+                            <a href="#">Tovar 1</a>
+                            <div class="submenu">
+                                <a href="#">Tovar 1 version 1</a>
+                                <a href="#">Tovar 1 version 2</a>
+                                <a href="#">Tovar 1 version 3</a>
+                                <a href="#">Tovar 1 version 4</a>
+                            </div>
+                            <div class="submenu_mover">V</div>
+                        </div>
+                        <div class="catmenu_item">
+                            <a href="#">Tovar 2</a>
+                            <div class="submenu">
+                                <a href="#">Tovar 2 version 1</a>
+                                <a href="#">Tovar 2 version 2</a>
+                            </div>
+                            <div class="submenu_mover">V</div>
+                        </div>
+                        <div class="catmenu_item">
+                            <a href="#">Tovar 3</a>
+                            <div class="submenu">
+                                <a href="#">Tovar 3 version 1</a>
+                                <a href="#">Tovar 3 version 2</a>
+                                <a href="#">Tovar 3 version 3</a>
+                            </div>
+                            <div class="submenu_mover">V</div>
+                        </div>
+                        <div class="catmenu_item">
+                            <a href="#">Tovar 4</a>
+                        </div>
+                        <div class="catmenu_item">
+                            <a href="#">Tovar 5</a>
+                        </div>
+                    </div>
+                </aside>
+                <div class="order">
+                    <h1>Корзина</h1>
+                    <p class="nihil">Ваша корзина пуста.</p>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">Наименование</th>
+                                <th scope="col">Количество</th>
+                                <th scope="col">Цена</th>
+                                <th scope="col">Сумма</th>
+                                <th scope="col">Удалить</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row" data-tovar="5711">1</th>
+                                <td>Товар 1</td>
+                                <td class="num">
+                                    <input type="number" value="10" pattern="^[0-9]*$">
+                                </td>
+                                <td class="rub">5</td>
+                                <td class="sum">50</td>
+                                <td class="del">
+                                    <div>+</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row" data-tovar="3432">2</th>
+                                <td>Товар 2</td>
+                                <td class="num">
+                                    <input type="number" value="10" pattern="^[0-9]*$">
+                                </td>
+                                <td class="rub">10</td>
+                                <td class="sum">100</td>
+                                <td class="del">
+                                    <div>+</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row" data-tovar="4846">3</th>
+                                <td>Товар 3</td>
+                                <td class="num">
+                                    <input type="number" value="10" pattern="^[0-9]*$">
+                                </td>
+                                <td class="rub">15</td>
+                                <td class="sum">150</td>
+                                <td class="del">
+                                    <div>+</div>
+                                </td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <th scope="row">Итого</th>
+                                <td colspan="5" class="allsum">300</td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                    <form id="orderdata">
+                        <input type="text" id="name" placeholder="name"><br>
+                        <input type="text" id="address" placeholder="address"><br>
+                        <input type="text" id="email" placeholder="email"><br>
+                        <input type="text" id="date" placeholder="date"><br>
+                        <textarea id="comment" placeholder="comment"></textarea><br>
+                        <button type="submit">Отправить заказ</button>
+                    </form>
+                </div>
+            </main>
+    <footer>
+    <div class="topfooter">
+        <div class="container">
+            <div class="title">Интернет-магазин</div>
+                <a class="phone" href="tel:88001111111">
+                    <a href="tel:88001111111">8 800 111-11-11</a>
+                </a>
+        </div>
+            <div class="container">
+                <div class="title">Способы оплаты</div>
+                <img src="https://img.icons8.com/color/48/000000/mastercard-logo.png"/>
+                <img src="https://img.icons8.com/color/48/000000/visa.png"/>
+                <img src="https://img.icons8.com/fluent/48/000000/mir.png"/>
+            </div>
+               <div class="container">
+                <div class="title">Мы в соц. сетях</div>
+                <div class="social">
+                    <a href="https://www.facebook.com"target="_blank"><img src="images/facebook.png" alt="facebook"></a>
+                    <a href="https://vk.com/"target="_blank"><img src="images/vk.png" alt="vk"></a>
+                    <a href="https://www.instagram.com/"target="_blank"><img src="images/instagram.png" alt="instagram"></a>
+                    <a href="https://www.youtube.com/"target="_blank"><img src="images/youtube.png" alt="youtube"></a>
+                </div>
+            </div>
+        </div>
+        <div class="bottomfooter">
+            <div class="container">
+               &copy; 2021 Все права защищены.
+            </div>
+        </div>
+    </div>
+    </footer>
+</div>
+</body>
+</html>

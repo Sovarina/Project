@@ -19,7 +19,7 @@ function sliderRun() {
         flag1 = true; 
         flag2 = true;
         flag3 = true;
-        left = current; /
+        left = current; 
         $('.slide').eq(left).animate({left: -w}, t, function(){
             flag1 = false; 
         });

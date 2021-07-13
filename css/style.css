@@ -289,7 +289,14 @@ main {
 	flex: 1 0 auto;
 	background: black;
 }
+/* contacts */
 
+.contactstainer {
+	display: flex;
+	flex-direction: row;
+	justify-content:space-around;
+	color: #adaa99;
+}
 /* footer */
 footer {
 	flex: 0 0 auto;

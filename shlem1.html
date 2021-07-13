@@ -15,20 +15,26 @@
     <div class="wrapper">
         <header>
             <div class="topheader">
-                <div class="container">
                     <div id="yourcity">
                         <p>Ваш город: Москва</p>
                     </div>
+                <div class="korzina">
+                    <span>
+                        <a href="order.html">
+                            <img src="images/korzina.png" width="26" height="26" alt="basket" class="bask">
+                        </a>
+                    </span>
                 </div>
             </div>
             <div class="mainheader">
                 <div class="container">
                     <a href="index.html"><img src="images/logo.png" alt="Логотип" class="logo"></a>
-                </div>
-                <div class="search">
-                    <form action="http://www.google.com/search" method="get">
-                        <input type="search" name="text" required placeholder="Поиск в google"/>
-                    </form>                              
+                    <div class="search">
+                        <form action="http://www.google.com/search" method="get">
+                            <input type="search" name="text" required placeholder="Поиск в google"/>
+                        </form>                              
+                    </div>
+                    <button type="button" class="basket">Войти</button>
                 </div>
             </div>
             <nav class="topmenu container">
@@ -44,7 +50,7 @@
                     </span>
                 </span>
                 <span class="menupoint">
-                    <a href="about_us.html" class="line-point">О нас</a>
+                    <a href="error.html" class="line-point">О нас</a>
                 </span>
                 <span class="menupoint">
                     <a href="#" class="line-point">Оплата и доставка</a>
@@ -56,18 +62,42 @@
                     <a href="zimnee_hranenie.html" class="line-point">Зимнее хранение</a>
                 </span>
             </nav>
-        </header>
-        <main class="container catalog">
-            <aside>
+         </header>
+			<main class="container catalog">
+				<aside>
                 <div class="catmenu">
                     <div class="catmenu_item">
-                        <a class="section-menu__link" href="motoshlemy.html">Мотошлемы</a>
-                        <a class="section-menu__link" href="motoekipirovka.html">Экипировка</a>
-                        <a class="section-menu__link" href="motorezina.html">Моторезина</a>
-                        <a class="section-menu__link" href="/catalog/motoshlemy/">Тюнинг и аксессуары</a>
+                        <a href="#">МОТОШЛЕМ</a>
+                        <div class="submenu">
+                            <a href="#">Интеграл</a>
+                            <a href="#">Модуляр</a>
+                            <a href="#">Кроссовый</a>
+                            <a href="#">Открытый</a>
+                        </div>
+                        <div class="submenu_mover">V</div>
                     </div>
+                    <div class="catmenu_item">
+                        <a href="#">МОТОТЕХНИКА</a>
+                        <div class="submenu">
+                            <a href="#">Honda</a>
+                            <a href="#">Kawasaki</a>
+                            <a href="#">Yamaha</a>
+                            <a href="#">Husqvarna</a>
+                        </div>
+                        <div class="submenu_mover">V</div>
+                    </div>
+                    <div class="catmenu_item">
+                        <a href="#">МОТОКУРТКА</a>
+                        <div class="submenu">
+                            <a href="#">Мотошлемы</a>
+                            <a href="#">Мотоперчатки</a>
+                            <a href="#">Мотоботы</a>
+                            <a href="#">Мотозащита</a>
+                        </div>
+                        <div class="submenu_mover">V</div>
+                    </div>  
                 </div>
-            </aside>
+				</aside>
             <div class="product">
                 <h1>SHOEI Мотошлем J-Cruise PLAIN</h1>
                 <div class="gallery-desk">
@@ -107,36 +137,42 @@
             </div>
         </main>
         <footer>
-            <div class="topfooter">
-                <div class="container">
-                    <div class="title">Интернет-магазин</div>
-                    <a class="phone" href="tel:88001111111">
-                        <a href="tel:88001111111">8 800 111-11-11</a>
-                    </a>
-                </div>
-                <div class="container">
-                    <div class="title">Способы оплаты</div>
-                    <img src="https://img.icons8.com/color/48/000000/mastercard-logo.png" />
-                    <img src="https://img.icons8.com/color/48/000000/visa.png" />
-                    <img src="https://img.icons8.com/fluent/48/000000/mir.png" />
-                </div>
-                <div class="container">
-                    <div class="title">Мы в соц. сетях</div>
-                    <div class="social">
-                        <a href="https://www.facebook.com" target="_blank"><img src="images/facebook.png" alt="facebook"></a>
-                        <a href="https://vk.com/" target="_blank"><img src="images/vk.png" alt="vk"></a>
-                        <a href="https://www.instagram.com/" target="_blank"><img src="images/instagram.png" alt="instagram"></a>
-                        <a href="https://www.youtube.com/" target="_blank"><img src="images/youtube.png" alt="youtube"></a>
-                    </div>
-                </div>
-            </div>
-            <div class="bottomfooter">
-                <div class="container">
-                    &copy; 2021 Все права защищены.
-                </div>
-            </div>
+            <div class="container">
+				<div class="topfooter">
+					<div class="footerinfo">
+						<div class="title">Интернет-магазин</div>
+						<a class="phone" href="tel:88001111111">
+							<a href="tel:88001111111">8 800 111-11-11</a>
+						</a>
+					</div>
+					<div class="footerinfo">
+						<div class="title">Способы оплаты</div>
+						<div class="social">
+							<img src="images/mastercard.png" alt="mastercard"/>
+							<img src="images/visa.png" alt="Visa"/>
+							<img src="images/mir.png" alt="Mir"/>
+						</div>
+					</div>
+					<div class="footerinfo">
+						<div class="title">Мы в соц. сетях</div>
+						<div class="social">
+							<a href="https://www.facebook.com" target="_blank"><img src="images/facebook.png" alt="facebook"></a>
+							<a href="https://vk.com/" target="_blank"><img src="images/vk.png" alt="vk"></a>
+							<a href="https://www.instagram.com/" target="_blank"><img src="images/instagram.png" alt="instagram"></a>
+							<a href="https://www.youtube.com/" target="_blank"><img src="images/youtube.png" alt="youtube"></a>
+						</div>
+					</div>
+				</div>
+				<div class="bottomfooter">
+					<div class="copyright">
+						&copy; 2021 Все права защищены.
+					</div>
+				</div>
+			</div>
         </footer>
     </div>
-    <div class="popup-desk"></div>
+    <div class="popup-desk">
+    <div class="popup">
+    </div>
 </body>
 </html>

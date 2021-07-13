@@ -13,7 +13,9 @@ body {
 	border-radius: 6px;
 	height: 100%;
 }
-
+a {
+	color: gray;
+}
 p {
 	margin: 0 0 10px;
 }
@@ -99,7 +101,6 @@ p {
 	box-sizing: border-box;
 	z-index:8;
 	text-align: center;
-	height: 180px;
 }
 .gorod p {
 	text-align: center;
@@ -128,16 +129,11 @@ p {
 .popup button {
 	background:#4a4141;
 	color: #adaa99;
-	width: calc(50% - 10px);
 	height: 30px;
-	margin: 0 0 10px;
+	margin: 0 auto;
 }
-.gorod button {
-	background: #4a4141;
+.table {
 	color: #adaa99;
-	border: none;
-	width: calc(50% - 10px);
-	margin: 5px 5px 0 0;
 }
 
 .lightbox {
@@ -174,6 +170,7 @@ p {
 	justify-content: space-between;
 	display: flex;
 	align-items: center;
+	padding: 0 40px;
 }
 .mainheader .container{
 	flex-direction: row;
@@ -251,9 +248,8 @@ p {
 	color: #adaa99;
 }
 .logo {
-	border-radius: 25px;
-	max-height: 100px;
-	max-width: 100px;
+	max-height: 150px;
+	max-width: 150px;
 	float: left;
 	margin-right: 20px;
 }
@@ -311,6 +307,11 @@ footer .container {
 	justify-content: space-around;
 	gap: 30px;
 	font: 15px/25px,sans-serif;
+}
+.footerinfo {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 .bottomfooter{
 	opacity: 0.6;
@@ -373,12 +374,11 @@ aside {
 	flex: none;
 	width: 300px;
 	color: #adaa99;
-	display: none;
 	background: black;
 	padding: 0;
 }
 .catmenu {
-	padding: 30px 40px;
+	padding: 10px 10px;
 }
 .catmenu_item {
 	padding: 15px 20px 15px;
@@ -424,6 +424,7 @@ aside {
 .catalog {
 	display: flex;
 	gap: 8px;
+	margin: 0;
 }
 .price {
 	font-size: 20px;
@@ -472,8 +473,10 @@ aside {
 /*order*/
 .order {
 	width: 100%;
-	background: #fff;
+	background: black;
+	color: #adaa99;
 }
+
 .nihil {
 	display: none;
 }
@@ -502,8 +505,8 @@ aside {
 	font: normal 24px/24px Arial;
 	transform: rotate(45deg);
 	transform-origin: center;
-	background: red;
-	color: white;
+	background: #4a4141;
+	color: #adaa99;
 	cursor: pointer;
 }
 #name, #date, #address, #email{
@@ -519,10 +522,15 @@ aside {
 	width:200px;
 }
 #order-but{
-	background:rgb(112,171,151);
+	background:#4a4141;
 	border:none;
 	border-radius:2px;
 	height:24px;
+	color: #adaa99;
+}
+input, textarea {
+	background:#4a4141;
+	color: #adaa99;
 }
 /*calendar*/
 .popup table{

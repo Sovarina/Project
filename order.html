@@ -1,72 +1,87 @@
 <!DOCTYPE html>
-<html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <title>Сайт проект</title>
-	<style>
-@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap');
-</style>
-	<link href="css/style.css" rel="stylesheet">
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Order Page</title>
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/style.css">
         <script src="js/jquery-3.6.0.min.js"></script>
+        <script src="js/bootstrap.bundle.js"></script>
         <script src="js/jquery.mask.js"></script>
         <script src="js/order.js"></script>
         <script src="js/calendar.js"></script>
         <script src="js/scripts.js"></script>
-</head>
-<body>
-	<div class="wrapper">
-		<header>
-        <div class="topheader">
-            <div class="container">
-                <div id="yourcity">
-					<p>Ваш город: Москва</p>
-					 <div class="div-popup">
-					<span>Ваш город: Москва?</span>
-					<button type="button" class="btn-yes">Да</button>
-					<button type="button" class="btn-no">Нет</button>
-					</div>
-				</div>		
-			</div>
-		</div>
-        <div class ="mainheader">
-            <div class="container">
-                <img src="images/logo.png" alt="Логотип" class="logo">
-            </div>
-        </div>
-            <nav class="topmenu container">
-                <span class="menupoint">
-                    <a href="#" class="line-point">Каталог</a>
-                    <span>
-                        <a href="#" class="pulldown-point">Мототехника</a>
-                        <a href="#" class="pulldown-point">Экипировка</a>
-                        <a href="#" class="pulldown-point">Аксессуары</a>
-                        <a href="#" class="pulldown-point">Запчасти</a>
-                        <a href="#" class="pulldown-point">Моторезина</a>
-                        <a href="#" class="pulldown-point">Тюнинг</a>
-                    </span>
-                </span>
-                <span class="menupoint">
-                    <a href="#" class="line-point">Бренды</a>
-                    <span>
-                        <a href="#" class="pulldown-point">Мототехника</a>
-                        <a href="#" class="pulldown-point">Экипировка</a>
-                        <a href="#" class="pulldown-point">Аксессуары</a>
-                        <a href="#" class="pulldown-point">Запчасти</a>
-                        <a href="#" class="pulldown-point">Моторезина</a>
-                        <a href="#" class="pulldown-point">Тюнинг</a>
-                    </span>
-                </span>
-                <span class="menupoint">
-                    <a href="#" class="line-point">О нас</a>
-                </span>
-                <span class="menupoint">
-                    <a href="#" class="line-point">Оплата и доставка</a>
-                </span>
-                <span class="menupoint">
-                    <a href="#" class="line-point">Зимнее хранение</a>
-                </span>
-            </nav>
-           </header>
+	</head>
+	<body>
+		<div class="wrapper">
+            <header>
+                <div class="topheader">
+                    <div class="container">
+                        <div id="yourcity">
+                            <p>Ваш город: Москва</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="mainheader">
+                    <div class="container">
+                        <img src="images/Octocat_github.png" id="privet" alt="" class="logo">
+                        
+                        <button type="button" class="basket">5</button>
+                        <div class="basket-label">В корзине 5 капибар</div>
+                    </div>
+                </div>
+                <div class="bottomheader">
+                    <nav class="topmenu container">
+                        <span class="menupoint">
+                            <a href="#" class="line-point">Point 1</a>
+                            <span>
+                                <a href="#" class="pulldown-point">Point 1</a>
+                                <a href="#" class="pulldown-point">Point 1</a>
+                                <a href="#" class="pulldown-point">Point 1</a>
+                                <a href="#" class="pulldown-point">Point 1</a>
+                                <a href="#" class="pulldown-point">Point 1</a>
+                                <a href="#" class="pulldown-point">Point 1</a>
+                            </span>
+                        </span><span class="menupoint">
+                            <a href="#" class="line-point">Point 1</a>
+                            <span>
+                                <a href="#" class="pulldown-point">Point 1</a>
+                                <a href="#" class="pulldown-point">Point 1</a>
+                                <a href="#" class="pulldown-point">Point 1</a>
+                                <a href="#" class="pulldown-point">Point 1</a>
+                                <a href="#" class="pulldown-point">Point 1</a>
+                                <a href="#" class="pulldown-point">Point 1</a>
+                            </span>
+                        </span><span class="menupoint">
+                            <a href="#" class="line-point">Point 1</a>
+                            <span>
+                                <a href="#" class="pulldown-point">Point 1</a>
+                                <a href="#" class="pulldown-point">Point 1</a>
+                                <a href="#" class="pulldown-point">Point 1</a>
+                                <a href="#" class="pulldown-point">Point 1</a>
+                                <a href="#" class="pulldown-point">Point 1</a>
+                                <a href="#" class="pulldown-point">Point 1</a>
+                            </span>
+                        </span><span class="menupoint">
+                            <a href="#" class="line-point">Point 4</a>
+                            <span>
+                                <a href="#" class="pulldown-point">Point 1</a>
+                                <a href="#" class="pulldown-point">Point 1</a>
+                                <a href="#" class="pulldown-point">Point 1</a>
+                                <a href="#" class="pulldown-point">Point 1</a>
+                                <a href="#" class="pulldown-point">Point 1</a>
+                                <a href="#" class="pulldown-point">Point 1</a>
+                            </span>
+                        </span><span class="menupoint">
+                            <a href="#" class="line-point">Point 5</a>
+                        </span><span class="menupoint">
+                            <a href="#" class="line-point">Point 6</a>
+                        </span><span class="menupoint">
+                            <a href="#" class="line-point">Point 7</a>
+                        </span>
+                    </nav>
+                </div>
+            </header>
             <main class="container catalog">
                 <aside>
                     <div class="catmenu">
@@ -174,37 +189,17 @@
                     </form>
                 </div>
             </main>
-    <footer>
-    <div class="topfooter">
-        <div class="container">
-            <div class="title">Интернет-магазин</div>
-                <a class="phone" href="tel:88001111111">
-                    <a href="tel:88001111111">8 800 111-11-11</a>
-                </a>
+            <footer>
+                <br>
+                <br>
+                <br>
+                <br>
+            </footer>
         </div>
-            <div class="container">
-                <div class="title">Способы оплаты</div>
-                <img src="https://img.icons8.com/color/48/000000/mastercard-logo.png"/>
-                <img src="https://img.icons8.com/color/48/000000/visa.png"/>
-                <img src="https://img.icons8.com/fluent/48/000000/mir.png"/>
-            </div>
-               <div class="container">
-                <div class="title">Мы в соц. сетях</div>
-                <div class="social">
-                    <a href="https://www.facebook.com"target="_blank"><img src="images/facebook.png" alt="facebook"></a>
-                    <a href="https://vk.com/"target="_blank"><img src="images/vk.png" alt="vk"></a>
-                    <a href="https://www.instagram.com/"target="_blank"><img src="images/instagram.png" alt="instagram"></a>
-                    <a href="https://www.youtube.com/"target="_blank"><img src="images/youtube.png" alt="youtube"></a>
-                </div>
+        <div class="popup-desk">
+            <div class="popup">
+                
             </div>
         </div>
-        <div class="bottomfooter">
-            <div class="container">
-               &copy; 2021 Все права защищены.
-            </div>
-        </div>
-    </div>
-    </footer>
-</div>
-</body>
+	</body>
 </html>

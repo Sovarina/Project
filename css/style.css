@@ -24,7 +24,9 @@ p {
 	margin: 0 auto;
 	padding: 16px;
 }
-
+.error {
+	color: white;
+}
 .wrapper {
 	display: flex;
 	flex-direction: column;
